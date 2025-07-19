@@ -1,5 +1,10 @@
 from flask import Flask,redirect,url_for,render_template,request
 from deepface import DeepFace
+import os
+
+UPLOAD_FOLDER = 'static'
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
 app=Flask(__name__)
 @app.route('/',methods=['GET','POST'])
 def home():
