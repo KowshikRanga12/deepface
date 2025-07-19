@@ -1,4 +1,3 @@
 deepface
-tensorflow
 flask
 tf-keras
